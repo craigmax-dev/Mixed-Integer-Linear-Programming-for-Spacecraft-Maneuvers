@@ -1,10 +1,6 @@
-# -----
-# TO DO
-# -----
-# Label all axes of plotted figures with variable and units
 
 # Import function library
-from MILP_LIB import *
+from lib.python.MILP_spacecraft_maneuvers import *
 
 # Problem files
 # Uncomment to run all Integration Test Problem Files
@@ -46,7 +42,8 @@ testCases = ["SYSTEM_TEST_01a",
 # Run models
 for test in testCases:
   print("Test case: {}".format(test))
-  file = importlib.import_module(test)
+  file_path = "lib.python.tests.system." + test
+  file = importlib.import_module(file_path)
   solution = optimizeTrajectory(file.activeConstraints, file.N, file.T, file.T_end, file.V, file.P, file.W, file.M, file.m, file.minApproachDist, file.x_ini, file.x_fin, file.x_lim, file.u_lim, file.objects, file.r)
 
   objective = round(pulp.value(solution['model'].objective), 6)
