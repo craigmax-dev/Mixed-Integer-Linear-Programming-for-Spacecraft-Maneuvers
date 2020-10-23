@@ -1,4 +1,6 @@
 
+# python C:\Program Files\IBM\ILOG\CPLEX_Studio1210\python\setup.py install
+ 
 # Import function library
 from lib.python.MILP_spacecraft_maneuvers import *
 
