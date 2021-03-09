@@ -1,11 +1,3 @@
-# -----
-# TO DO
-# -----
-# Normalization of x and u matrices: x = X*x_norm, u = U*u_norm
-# Implement Hills Equations Dynamics
-# Plot start and end positions in 3dPlot
-# -----------------------------------------------------------------------------
-
 # -----------------------------------------------------------------------------
 # Global Variables
 # -----------------------------------------------------------------------------
@@ -17,16 +9,20 @@ paletteDark6 = ["#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e", "#e6ab02"
 # Imports
 # -----------------------------------------------------------------------------
 import importlib
-from itertools import product, combinations
 import math as mt
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 import matplotlib.colors as colors
-from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
+import matplotlib.patches as patches
+import matplotlib.pyplot as plt
+import numpy as np
 import pulp
+import pandas as pd
+from itertools import product, combinations
+from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 
+# Latex formatting
+# from matplotlib import rc
+# rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+# rc('text', usetex=True)
 
 # -----------------------------------------------------------------------------
 # Functions
@@ -73,9 +69,8 @@ def plotPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, obje
 
 # Plot Path of satellites in 2D space
 def plot2DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, objective):
-  
-  title = append([title, " 2D Path \nObjective = "])
-  title = append([title, objective])
+
+  title = "2D path, $J = {}$".format(objective)
   
   # Variables
   fig = plt.figure(title)
@@ -103,13 +98,18 @@ def plot2DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, ob
       color=colour, 
       linestyle='None')
     # Satellite Path
-    label = "$x_{{(:, {}, :)}}$".format(p)
+    label = "Vehicle {}".format(p+1)
     cm = plt.cm.get_cmap('Reds')
     t = np.arange(T)
     plt.plot(d[:, p, 0], d[:, p, 1] ,
-      linewidth=2,
+      linewidth=1,
       color=colour,
       label=label)
+    plt.plot(d[1:T-1, p, 0], d[1:T-1, p, 1] ,
+      marker='.',
+      markersize=10, 
+      color=colour,
+      label='_Hidden')
   if objects.shape[1] > 0:
     for i in range(objects.shape[0]):
       left   = objects[i, 0]
@@ -124,6 +124,8 @@ def plot2DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, ob
 
   axes.set_xlim(axLims[0] - 1, axLims[1] + 1)
   axes.set_ylim(axLims[2] - 1, axLims[3] + 1)
+  plt.xlabel('$x (m)$')
+  plt.ylabel('$y (m)$')  
   plt.legend()
   fig.suptitle(title, fontsize=12)
 
@@ -133,10 +135,9 @@ def plot2DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, ob
     plt.savefig(figName, bbox_inches='tight')
   return
 
-def plot3DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims):
-  
-  title = append([title, " 3D Path \nObjective = "])
-  title = append([title, objective])
+def plot3DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, objective):
+
+  title = "3D path, $J = {}$".format(objective)
 
   # Variables
   fig = plt.figure(title)
@@ -164,7 +165,7 @@ def plot3DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims):
     #   color=colour, 
     #   linestyle='None')
     # Satellite Path
-    label = "$x_{{(:, {}, :)}}$".format(p)
+    label = "Vehicle {}".format(p)
     cm = plt.cm.get_cmap('Reds')
     t = np.arange(T)
     # plt.scatter(d[0:T, p, 0], d[0:T, p, 1] ,
@@ -175,6 +176,11 @@ def plot3DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims):
     #   label=label)
     plt.plot(d[:, p, 0], d[:, p, 1] , d[:, p, 2],  
       linewidth=2,
+      color=colour,
+      label=label)
+    plt.plot(d[1:T-1, p, 0], d[1:T-1, p, 1] , d[1:T-1, p, 2],  
+      marker='.',
+      markersize=10, 
       color=colour,
       label=label)
   if objects.shape[1] > 0:
@@ -189,21 +195,23 @@ def plot3DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims):
   axes.set_xlim3d(axLims[0] - 1, axLims[1] + 1)
   axes.set_ylim3d(axLims[2] - 1, axLims[3] + 1)
   axes.set_zlim3d(axLims[4] - 1, axLims[5] + 1)
+  plt.xlabel('$x (m)$')
+  plt.ylabel('$y (m)$')  
+  plt.ylabel('$z (m)$')  
   plt.legend()
   fig.suptitle(title, fontsize=12)
 
   # Save
   if(save):
-    figName = append([testCase, "_3DPath.png"])
-    plt.savefig("figures/", figName, bbox_inches='tight')
+    figName = append(["figures/", testCase, "_3DPath.png"])
+    plt.savefig(figName, bbox_inches='tight')
   return
 
 # Plot thrusts of satellites
 def plotThrust(title, testCase, save, u, T, T_end, V, N, colourMap, objective):
 
   # Variables
-  title = append([title, " Thrust Profile \n Objective = "])
-  title = append([title, objective])
+  title = "Thrust Profile, $J = {}$".format(objective)
 
   fig = plt.figure(title)
   thrust = np.zeros([T+1, V, N])
@@ -217,13 +225,18 @@ def plotThrust(title, testCase, save, u, T, T_end, V, N, colourMap, objective):
           thrust[i+1, p, n] = u[i, p, n].varValue  
 
   # Fuel consumption plots
+  axesStr = ["x", "y", "z"]
   for n in range(N):
     for p in range(V):
+      label = "Vehicle {}".format(p)
       colour = colourMap[p]
       timeAx = np.linspace(0, T_end+T_end/(T-1), num=T+1)
       axes = plt.subplot(N,1,n+1)
-      axes.step(timeAx, thrust[:, p, n], color=colour)
+      axes.step(timeAx, thrust[:, p, n], color=colour, label=label)
       plt.grid(color='k', linestyle=':', alpha=0.5)
+    plt.ylabel('$u_{} (N)$'.format(axesStr[n]))  
+  plt.xlabel('$t (s)$')
+
 
   fig.suptitle(title, fontsize=12)
 
@@ -237,7 +250,9 @@ def plotThrust(title, testCase, save, u, T, T_end, V, N, colourMap, objective):
 def plotSeparation(title, testCase, save, x, T, T_end, V, N, colourMap):
 
   # Variables
-  title = append([title, " Separation"])
+  title = "Separation"
+
+
   fig = plt.figure(title)
   if V <= 1:
     return fig
@@ -276,7 +291,8 @@ def plotSeparation(title, testCase, save, x, T, T_end, V, N, colourMap):
 def plotMinSeparation(title, testCase, save, x, T, T_end, V, N, colourMap):
 
   # Variables
-  title = append([title, " Minimum Separation"])
+  title = "Minimum Separation"
+
   fig = plt.figure(title)
   if V <= 1:
     return fig
@@ -366,22 +382,40 @@ def exportDataframe(title, test, x, u):
 # Return a list of constraints for model using free space dynamics
 def freeSpaceDynamics(x, u, T, V, N, m, del_t):
   retVal = []
-  for i in range(1, T): # First time step, no dynamics
+  for i in range(1, T):
     for p in range(V):
       for n in range(N):
+        # Velocities
         retVal.append(
           x[i, p, N+n] == x[i-1, p, N+n] + u[i-1, p, n]*1/m[p]*del_t)
+        # Displacements
         retVal.append(
           x[i, p, n] == x[i-1, p, n] 
                       + x[i-1, p, N+n]*del_t 
                       + 0.5*u[i-1, p, n]*1/m[p]*del_t*del_t)
   return retVal
 
-def linearHillsDynamics(x, u, T, V, N, m, del_t):
+def linearHillsDynamics(x, u, T, V, N, m, del_t, omega):
+# Return a list of constraints for model using free space dynamics
+# NOTE: not functional - results in no feasible solution
   retVal = []
+  for i in range(1, T):
+    for p in range(V):
+      retVal.append(
+        x[i, p, 0] == x[i-1, p, 0] + x[i-1, p, N]*del_t + 0.5*(x[i-1, p, 0]*3*omega*omega + x[i-1, p, 1+N]*2*omega + u[i-1, p, 0]*1/m[p])*del_t*del_t)
+      retVal.append(
+        x[i, p, 1] == x[i-1, p, 1] + x[i-1, p, N+1]*del_t + 0.5*(-x[i-1, p, N]*2*omega + u[i-1, p, 1]*1/m[p])*del_t*del_t)
+      retVal.append(
+        x[i, p, 2] == x[i-1, p, 2] + x[i-1, p, N+2]*del_t + 0.5*(-x[i-1, p, 2]*omega*omega + u[i-1, p, 2]*1/m[p])*del_t*del_t)
+      retVal.append(
+        x[i, p, N] == x[i-1, p, N] + (x[i-1, p, 0]*3*omega*omega + x[i-1, p, 1+N]*2*omega + u[i-1, p, 0]*1/m[p])*del_t)
+      retVal.append(
+        x[i, p, N+1] == x[i-1, p, N+1] + (-x[i-1, p, N]*2*omega + u[i-1, p, 1]*1/m[p])*del_t)
+      retVal.append(
+        x[i, p, N+2] == x[i-1, p, N+2] + (-x[i-1, p, 2]*omega*omega + u[i-1, p, 2]*1/m[p])*del_t)
   return retVal
 
-# -------------
+# ------------- 
 # Miscellaneous
 # -------------
 # Appends str2 to str1
@@ -395,8 +429,6 @@ def append(strArr):
   return mainStr
 
 # Return axis limits for a dataset
-# TO DO:
-# - Include scale factor?
 def setAxis(N, data):
   axisRange = np.empty([N, 2])
   bufferSpace = 0.5
@@ -407,21 +439,13 @@ def setAxis(N, data):
   return axisRange
 
 def totalConstraints(T, V, N, numObjects):
-  # Constraints up to obstacle avoidance (check!)
+  # Constraints up to obstacle avoidance
   numConstraints = 4*T*V*N + 2*(T-1)*V*N + 2*V*N + T*V*numObjects + T*V*N*numObjects
   return numConstraints
 
-# -----------------------------------------------------------------------------
-# Optimization Problem
-# -----------------------------------------------------------------------------
-# TO DO:
-# ------
-# - Hill's equations
-# - Implement defined software architecture
-# - Implement fuel use - currently optimizing for minimum total thrust
-# -----------------------------------------------------------------------------
-
-def optimizeTrajectory(activeConstraints, N, T, T_end, V, P, W, M, m, minApproachDist, x_ini, x_fin, x_lim, u_lim, objects, r):
+def optimizeTrajectory(activeConstraints, 
+  N, T, T_end, V, P, W, M, m, minApproachDist, 
+  x_ini, x_fin, x_lim, u_lim, objects, r, dynamicsModel, omega):
 
   # --------------------
   # Calculated Variables
@@ -474,8 +498,13 @@ def optimizeTrajectory(activeConstraints, N, T, T_end, V, P, W, M, m, minApproac
       if(activeConstraints["finalConfigurationSelection"] == False):
         model += x[T-1, p, k] == x_fin[p, k]
   # Model Dynamics
-  for constraint in freeSpaceDynamics(x, u, T, V, N, m, del_t):
-    model += constraint
+  if dynamicsModel == "freeSpace":
+    for constraint in freeSpaceDynamics(x, u, T, V, N, m, del_t):
+      model += constraint
+  elif dynamicsModel == "hills":
+    for constraint in linearHillsDynamics(x, u, T, V, N, m, del_t, omega):
+      model += constraint
+
   # State and Input vector limits
   for i in range(T):
     for p in range(V):
@@ -536,7 +565,7 @@ def optimizeTrajectory(activeConstraints, N, T, T_end, V, P, W, M, m, minApproac
               for m in range(N):
                 if m != n:
                   model += x[i, p, m] - x[i, q, m] >= W - M*c_pos[i, p, q, n, m+1]
-                  model += x[i, q, m] - x[i, p, m]   >= W - M*c_pos[i, p, q, n, m+N+1]
+                  model += x[i, q, m] - x[i, p, m] >= W - M*c_pos[i, p, q, n, m+N+1]
     c_neg = pulp.LpVariable.dicts(
     "plumeAvoidanceVehicleNeg", ((i, p, q, n, k) for i in range(T) for p in range(V) for q in range(V) for n in range(N) for k in range(2*N+1)),
     cat='Binary')
@@ -550,8 +579,8 @@ def optimizeTrajectory(activeConstraints, N, T, T_end, V, P, W, M, m, minApproac
             model += x[i, q, n] - x[i, p, n] >= P - M*c_neg[i, p, q, n, n+N+1]
             for m in range(N):
               if m != n:
-                model += x[i, p, m] - x[i, q, n] >= W - M*c_neg[i, p, q, n, m+1]
-                model += x[i, q, n] - x[i, p, m]   >= W - M*c_neg[i, p, q, n, m+N+1]
+                model += x[i, p, m] - x[i, q, m] >= W - M*c_neg[i, p, q, n, m+1]
+                model += x[i, q, m] - x[i, p, m] >= W - M*c_neg[i, p, q, n, m+N+1]
 
   # Plume Avoidance for Obstacles
   # -----------------------------
@@ -618,50 +647,3 @@ def optimizeTrajectory(activeConstraints, N, T, T_end, V, P, W, M, m, minApproac
 
   # Create Pandas dataframe for results and return
   return {'model':model, 'x':x, 'u':u}
-
-# -----------------------------------------------------------------------------
-# Archive
-# -----------------------------------------------------------------------------
-
-# # Print report of decision variables for optimized solution
-# # Remove - not useful
-# def printOptimizationResults(title, model, x, u, T, V, N, pad, dp):
-#   if pad <= 5:
-#     print("ERROR: pad must be > 5")
-#     return
-#   if dp >= pad:
-#     print("ERROR: dp must be < pad")
-#     return
-
-#   padSpace = pad - 5
-
-#   print("-"*79)
-#   print(title)
-#   print("Status: {}".format(pulp.LpStatus[model.status]))
-#   print("Objective: {}".format(pulp.value(model.objective)))
-#   print("-"*79)
-
-#   if pulp.LpStatus[model.status] != "Infeasible":
-#     print("States")
-#     print("-"*79)  
-#     print("Timestep {:{pad}}| Vehicle {:{pad}}| Dimension {:{pad}}| Displacement{:{pad}}| Velocity{:{pad}}|".format("", "", "", "", "", pad=padSpace))
-#     for i in range(T):
-#       for p in range(V):
-#         for n in range(N):
-#           dis = x[i, p, n]
-#           dis_val = dis.varValue
-#           vel = x[i, p, N+n]
-#           vel_val = vel.varValue
-#           print("  {:{pad}}  |  {:{pad}}  |   {:{pad}}   |    {:{pad}.{dp}f}    |  {:{pad}.{dp}f}  |".format(i, p, n, dis_val, vel_val, pad=pad, dp=dp))
-#     print("-"*79)
-#     print("Inputs")
-#     print("-"*79)
-#     print("Timestep {:{pad}}| Vehicle {:{pad}}| Dimension {:{pad}}| Fuel        {:{pad}}|".format("", "", "", "", pad=padSpace))  
-#     for i in range(T):
-#       for p in range(V):
-#         for n in range(N):
-#           fuel = u[i, p, n]
-#           fuel_val = fuel.varValue
-#           print("  {:{pad}}  |  {:{pad}}  |   {:{pad}}   |    {:{pad}.{dp}f}    |".format(i, p, n, fuel_val, pad=pad, dp=dp))
-#     print("-"*79)
-#   return
