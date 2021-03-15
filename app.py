@@ -13,25 +13,25 @@ from lib.python.MILP_spacecraft_maneuvers import *
 
 # Problem files
 # Uncomment to run all Integration Test Problem Files
-testCases = ["INTEGRATION_TEST_01a",
-            "INTEGRATION_TEST_01b",
-            "INTEGRATION_TEST_01c",
-            "INTEGRATION_TEST_01d",
-            "INTEGRATION_TEST_02a",
-            "INTEGRATION_TEST_02b",
-            "INTEGRATION_TEST_03a",
-            "INTEGRATION_TEST_03b",
-            "INTEGRATION_TEST_04a",
-            "INTEGRATION_TEST_04b",
-            "INTEGRATION_TEST_05a",
-            "INTEGRATION_TEST_05b",
-            "INTEGRATION_TEST_06a",
-            "INTEGRATION_TEST_06b",
-            "INTEGRATION_TEST_05c",
-            "INTEGRATION_TEST_05d",
-            "INTEGRATION_TEST_06a",
-            "INTEGRATION_TEST_06b"]
-# testCases = ["INTEGRATION_TEST_01a"]
+# testCases = ["INTEGRATION_TEST_01a",
+#             "INTEGRATION_TEST_01b",
+#             "INTEGRATION_TEST_01c",
+#             "INTEGRATION_TEST_01d",
+#             "INTEGRATION_TEST_02a",
+#             "INTEGRATION_TEST_02b",
+#             "INTEGRATION_TEST_03a",
+#             "INTEGRATION_TEST_03b",
+#             "INTEGRATION_TEST_04a",
+#             "INTEGRATION_TEST_04b",
+#             "INTEGRATION_TEST_05a",
+#             "INTEGRATION_TEST_05b",
+#             "INTEGRATION_TEST_06a",
+#             "INTEGRATION_TEST_06b",
+#             "INTEGRATION_TEST_05c",
+#             "INTEGRATION_TEST_05d",
+#             "INTEGRATION_TEST_06a",
+#             "INTEGRATION_TEST_06b"]
+# testCases = ["INTEGRATION_TEST_06a"]
 
 # Uncomment to run all limitation test Problem Files
 # testCases = ["LIMITATION_TEST_01",
@@ -40,20 +40,23 @@ testCases = ["INTEGRATION_TEST_01a",
 #             "LIMITATION_TEST_04"]
 
 # Uncomment to run all system test Problem Files
-# testCases = ["SYSTEM_TEST_01",
-# 			"SYSTEM_TEST_02",
-# 			"SYSTEM_TEST_03",
-#       "SYSTEM_TEST_04",
-#       "SYSTEM_TEST_05",
-#       "SYSTEM_TEST_06"]
+# testCases = [ 
+#   "SYSTEM_TEST_06a",
+#   "SYSTEM_TEST_06b",
+#   "SYSTEM_TEST_06c",
+#   "SYSTEM_TEST_06d",
+#   "SYSTEM_TEST_06e"]
 
 # Uncomment to run all paper Problem Files
 # testCases = [
-#   "PAPER_01",
-#   "PAPER_02",
-#   "PAPER_03",
+#   "PAPER_TEST_01a",
+#   "PAPER_TEST_01b",
+#   "PAPER_TEST_01c",
+#   "PAPER_03a",
+#   "PAPER_03b",
 #   "PAPER_04"]
-
+testCases = [
+  "SYSTEM_TEST_06a"]
 # Run models
 for test in testCases:
   print("Test case: {}".format(test))

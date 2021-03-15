@@ -99,8 +99,8 @@ def plot2DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, ob
       linestyle='None')
     # Satellite Path
     label = "Vehicle {}".format(p+1)
-    cm = plt.cm.get_cmap('Reds')
-    t = np.arange(T)
+    # cm = plt.cm.get_cmap('Reds')
+    # t = np.arange(T)
     plt.plot(d[:, p, 0], d[:, p, 1] ,
       linewidth=1,
       color=colour,
@@ -151,38 +151,30 @@ def plot3DPath(title, testCase, save, x, objects, T, V, N, colourMap, axLims, ob
         d[i, p, n] = x[i, p, n].varValue
   for p in range(V):
     colour = colourMap[p]
-    # Start and end positions
-    # plt.scatter(d[0, p, 0], d[0, p, 1], d[0, p, 2], 
-    #   marker='o')#,
-#      markersize=10)#,
-#      mew=2,
-#      color=colour)
-#      linestyle='None')
-    # plt.plot(d[T-1, p, 0], d[T-1, p, 1], d[T-1, p, 2], 
-    #   marker='x',
-    #   markersize=10, 
-    #   mew=2,
-    #   color=colour, 
-    #   linestyle='None')
     # Satellite Path
-    label = "Vehicle {}".format(p)
-    cm = plt.cm.get_cmap('Reds')
-    t = np.arange(T)
-    # plt.scatter(d[0:T, p, 0], d[0:T, p, 1] ,
-    #   linewidth=2,
-    #   marker = 'o',
-    #   c=t,
-    #   cmap=cm,
-    #   label=label)
+    label = "Vehicle {}".format(p+1)
+    # cm = plt.cm.get_cmap('Reds')
+    # t = np.arange(T)
+    # Start and end positions
+    plt.plot(d[0, p, 0], d[0, p, 1] , d[0, p, 2], 
+      marker='+',
+      markersize=5,
+      color=colour,
+      linestyle='None')
+    plt.plot(d[T-1, p, 0], d[T-1, p, 1] , d[T-1, p, 2], 
+      marker='x',
+      markersize=5, 
+      color=colour, 
+      linestyle='None')
     plt.plot(d[:, p, 0], d[:, p, 1] , d[:, p, 2],  
       linewidth=2,
       color=colour,
       label=label)
     plt.plot(d[1:T-1, p, 0], d[1:T-1, p, 1] , d[1:T-1, p, 2],  
       marker='.',
-      markersize=10, 
+      markersize=5, 
       color=colour,
-      label=label)
+      label='_Hidden')
   if objects.shape[1] > 0:
     for l in range(objects.shape[0]):
       obj = objects[l, :]
@@ -415,7 +407,7 @@ def linearHillsDynamics(x, u, T, V, N, m, del_t, omega):
         x[i, p, N+2] == x[i-1, p, N+2] + (-x[i-1, p, 2]*omega*omega + u[i-1, p, 2]*1/m[p])*del_t)
   return retVal
 
-# ------------- 
+# -------------  
 # Miscellaneous
 # -------------
 # Appends str2 to str1

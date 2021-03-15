@@ -26,7 +26,7 @@ activeConstraints = {
   "plumeAvoidanceObstacle":False,
   "finalConfigurationSelection":False}
 # Define dynamics model
-dynamicsModel = "hills" # Define dynamics model - "hills" or "freeSpace"
+dynamicsModel = "freeSpace" # Define dynamics model - "hills" or "freeSpace"
 # Define outputs
 outputs = {
   "dataframe":True,

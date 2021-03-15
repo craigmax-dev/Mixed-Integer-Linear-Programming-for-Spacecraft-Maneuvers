@@ -1,7 +1,6 @@
 # -----------------------------------------------------------------------------
-# PAPER_03
+# INTEGRATION_TEST_06
 # -----------------------------------------------------------------------------
-# ISS Remote Camera 
 
 # --------------
 # Imports
@@ -12,15 +11,17 @@ import numpy as np
 # Model Settings
 # --------------
 # Problem File title
-title = "Paper Simulation 3: ISS Remote Camera "
+title = "Integration Test 6: Plume Avoidance for Vehicles"
 # Define active constraints
 activeConstraints = { 
   "basic":True, 
   "obstacleAvoidance":True, 
-  "collisionAvoidance":False, 
+  "collisionAvoidance":True, 
   "plumeAvoidanceVehicle":True,
-  "plumeAvoidanceObstacle":False,
-  "finalConfigurationSelection":False}
+  "plumeAvoidanceObstacle":True,
+  "finalConfigurationSelection":True}
+# Define dynamics model
+dynamicsModel = "freeSpace" # Define dynamics model - "hills" or "freeSpace"
 # Define outputs
 outputs = {
   "dataframe":True,
@@ -32,36 +33,32 @@ outputs = {
 # Define colour scheme
 colourScheme = "paletteDark6"
 # Axis limits
-axLims = np.array([-20, 30, -10, 40, -20, 20])
+axLims = np.array([0, 20, 0, 20, 0, 20])
 
 # ---------------
 # Model Variables
 # ---------------
 N = 3       # Number of dimensions
-T = 40     # Number of time steps
-T_end = 4000 # End time (s)
-V = 1       # Number of vehicles
-P = 10      # Plume Length (m)
-W = 1       # Plume Width (m)
-M = 1000000 # Big M Method
-m = np.array([5])  # Mass of satellites (kg)
+T = 20     # Number of time steps
+T_end = 100 # End time (s)
+V = 2       # Number of vehicles
+P = 10       # Plume Length (m)
+W = 2       # Plume Width (m)
+M = 1000    # Big M Method
+m = np.array([1, 1])  # Mass of satellites (kg)
 minApproachDist = 1   # Min displacement between satellie and any obstacle in each dimension (m)
-omega = 5400 # (s)
-dynamicsModel = "hills" # Define dynamics model - "hills" or "freeSpace"
+omega = 0 # (s) - only used in hills dynamics model
 
 # Initial state vector
-x_ini = np.array([[-2, 12, 0, 0, 0, 0]]) # x_i = 0, v_i = 0
+x_ini = np.array([[10, 10, 0, 0, 0, 0], [5, 5, 10, 0, 0, 0]]) # x_i = 0, v_i = 0
 # Final state vector
-x_fin = np.array([[3, 17, 4, 0, 0, 0]]) # x_i = 1, v_i = 0
+x_fin = np.array([[10, 10, 20, 0, 0, 0], [15, 15, 10, 0, 0, 0]]) # x_i = 1, v_i = 0
 # State vector limits
 x_lim = 100*np.ones([V, 2*N])
 # Input vector limits
-u_lim = 1e-6*np.ones([V, N]) # Thrust (N)
+u_lim = 1*np.ones([V, N]) # Thrust (N)
 # Objects - only work in 2D+
-objects = np.array([
-  [0, 5, 0, 30, 0, 5], 
-  [0, 20, 14, 15, 2, 3], 
-  [-10, 0, 13, 16, 1, 4], 
-  [2, 3, 5, 10, -10, 10]]) #
+#objects = np.array([[2, 8, -2, 2, -6, 6], [2, 8, -6, 6, -2, 2]]) # [N1min, N1max, N2min, N2max, ...]
+objects = np.array([[2, 18, 8, 12, 9, 11], [8, 12, 2, 18, 9, 11]]) #
 # Safety distance
 r = 1*np.ones([N])

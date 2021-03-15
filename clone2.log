@@ -1126,3 +1126,664 @@ Log for 'C:\Users\craig\AppData\Local\Temp\e17c45d395b549bd9d34da518112fe86-pulp
 
 Log for 'C:\Users\craig\AppData\Local\Temp\6d20c727ff8247adaf7c2fccc3b61d7b-pulp.lp' Clone_2 (V12.10.0.0) Mon Mar  1 11:55:27 2021
 
+
+Log for 'C:\Users\craig\AppData\Local\Temp\19caf2a565cb4bb0be574495510ce045-pulp.lp' Clone_2 (V12.10.0.0) Tue Mar  9 21:38:44 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\e31c53294d024076b802a9beaaecc146-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 11:03:40 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\7f3f829c1d4349ada0926b911341ce29-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:13:52 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\7f3f829c1d4349ada0926b911341ce29-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:18:35 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2091 rows and 636 columns.
+Aggregator did 72 substitutions.
+Reduced LP has 1674 rows, 1128 columns, and 4230 nonzeros.
+Presolve time = 0.02 sec. (3.28 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =        113967.520829
+Iteration:   284    Scaled infeas =          7063.792675
+Switched to devex.
+Iteration:   471    Scaled infeas =          3954.050809
+Iteration:   671    Scaled infeas =          1768.629226
+Iteration:   824    Scaled infeas =          1143.962338
+Iteration:   974    Scaled infeas =           339.417677
+Iteration:  1118    Scaled infeas =             8.776748
+Iteration:  1124    Objective     =          1310.616274
+Iteration:  1243    Objective     =          1106.555165
+Iteration:  1382    Objective     =           866.779107
+Iteration:  1508    Objective     =           621.743577
+Switched to steepest-edge.
+Iteration:  1635    Objective     =           500.832701
+Iteration:  1717    Objective     =           462.880200
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\b38e1c35e0c64d1ca66190a25d7a4fd9-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:18:37 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\32fca54cfa5740df96aa5458a0ddbf60-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:18:47 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\32fca54cfa5740df96aa5458a0ddbf60-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:19:09 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3534 rows and 2349 columns.
+Aggregator did 190 substitutions.
+Reduced LP has 131 rows, 107 columns, and 645 nonzeros.
+Presolve time = 0.02 sec. (2.19 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1999.073861
+Iteration:    69    Scaled infeas =             0.019842
+Switched to devex.
+Iteration:    71    Objective     =            67.941880
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\8fc296745f764724be02f064cf33f667-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:19:13 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\8fc296745f764724be02f064cf33f667-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:20:16 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3553 rows and 2378 columns.
+Aggregator did 181 substitutions.
+Reduced LP has 136 rows, 114 columns, and 628 nonzeros.
+Presolve time = 0.00 sec. (2.19 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1919.008227
+Switched to devex.
+Iteration:    73    Objective     =            53.317705
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\0b2124a5cc2741799498761bff2e5896-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:20:18 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\b3c0ea77688243179dee2b91e8b5cbfa-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:20:21 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\b3c0ea77688243179dee2b91e8b5cbfa-pulp.lp' Clone_2 (V12.10.0.0) Wed Mar 10 13:21:32 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4341 rows and 2315 columns.
+Aggregator did 149 substitutions.
+Reduced LP has 162 rows, 176 columns, and 793 nonzeros.
+Presolve time = 0.00 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1013.496551
+Switched to devex.
+Iteration:    91    Scaled infeas =            43.786231
+Iteration:   157    Objective     =            16.789638
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\4ad6502b98624dfa903f8582692b9b5d-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:35:02 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\c0feb75b3b554a69b2f746af963d47eb-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:35:11 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\c0feb75b3b554a69b2f746af963d47eb-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:47:13 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3530 rows and 2382 columns.
+Aggregator did 88 substitutions.
+Reduced LP has 237 rows, 176 columns, and 703 nonzeros.
+Presolve time = 0.00 sec. (2.47 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =         43384.246347
+Switched to steepest-edge.
+Iteration:    90    Scaled infeas =           499.113837
+Iteration:   156    Scaled infeas =            62.368643
+Iteration:   183    Objective     =           135.044138
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\1beb908e021341598ed3e37086e88cba-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:50:48 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\1beb908e021341598ed3e37086e88cba-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:51:18 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3486 rows and 2371 columns.
+Aggregator did 121 substitutions.
+Reduced LP has 248 rows, 154 columns, and 677 nonzeros.
+Presolve time = 0.00 sec. (2.40 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =         20011.131566
+Switched to steepest-edge.
+Iteration:    96    Scaled infeas =           184.942074
+Iteration:   158    Scaled infeas =             4.652911
+Iteration:   173    Objective     =            90.196770
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\2bdfe5808a7e4964882c832e81d9510b-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:52:06 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\2bdfe5808a7e4964882c832e81d9510b-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:53:04 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3435 rows and 2345 columns.
+Aggregator did 132 substitutions.
+Reduced LP has 288 rows, 169 columns, and 780 nonzeros.
+Presolve time = 0.00 sec. (2.49 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =         37408.777268
+Switched to steepest-edge.
+Iteration:   101    Scaled infeas =           517.032605
+Iteration:   165    Scaled infeas =            83.577516
+Iteration:   213    Objective     =            97.332540
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\55597d3300fe4b1f938e5812dc32c637-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:54:04 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\55597d3300fe4b1f938e5812dc32c637-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 11:54:56 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3432 rows and 2356 columns.
+Aggregator did 133 substitutions.
+Reduced LP has 290 rows, 157 columns, and 760 nonzeros.
+Presolve time = 0.00 sec. (2.44 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =         22473.955622
+Switched to steepest-edge.
+Iteration:    95    Scaled infeas =           279.717846
+Iteration:   158    Scaled infeas =             8.565591
+Iteration:   180    Objective     =            57.272955
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\19d76c8990b04ae99c4a432f9e1c17a1-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 12:22:40 2021
+
+Advanced basis not built.
+
+Log for 'C:\Users\craig\AppData\Local\Temp\19d76c8990b04ae99c4a432f9e1c17a1-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 12:22:55 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4336 rows and 2313 columns.
+Aggregator did 143 substitutions.
+Reduced LP has 173 rows, 184 columns, and 802 nonzeros.
+Presolve time = 0.00 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1201.954723
+Switched to devex.
+Iteration:    92    Scaled infeas =             7.358748
+Iteration:   116    Objective     =            15.821721
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\d8289d40af6b48e4a85eb92043f845a2-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 12:23:42 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\37a442fc7e1c4fb6be69bde277d20d56-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 12:25:41 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\0deec17b0ce14c6a871ac7daa73cf8f7-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 12:26:30 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\0cd2babd6a854b66b6ca9865369a0c89-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 20:31:41 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\0cd2babd6a854b66b6ca9865369a0c89-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 20:31:42 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2998 rows and 959 columns.
+Aggregator did 63 substitutions.
+Reduced LP has 179 rows, 175 columns, and 517 nonzeros.
+Presolve time = 0.00 sec. (1.47 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =            67.107973
+Iteration:    67    Scaled infeas =             2.549213
+Switched to devex.
+Iteration:    89    Objective     =             1.889378
+Iteration:   152    Objective     =             0.017111
+Iteration:   222    Objective     =             0.004811
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\3152ca36a3db43d993f52e1c2393eaf1-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 20:41:33 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\3152ca36a3db43d993f52e1c2393eaf1-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 20:41:35 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2996 rows and 958 columns.
+Aggregator did 63 substitutions.
+Reduced LP has 181 rows, 176 columns, and 521 nonzeros.
+Presolve time = 0.00 sec. (1.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =            69.946758
+Switched to devex.
+Iteration:    67    Scaled infeas =             2.292563
+Iteration:    83    Objective     =             3.754000
+Iteration:   146    Objective     =             0.015207
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\4ad6cabbb59c421dbf3be106d955c944-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 20:42:14 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\4ad6cabbb59c421dbf3be106d955c944-pulp.lp' Clone_2 (V12.10.0.0) Thu Mar 11 20:42:29 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 5836 rows and 1858 columns.
+Aggregator did 123 substitutions.
+Reduced LP has 361 rows, 356 columns, and 1061 nonzeros.
+Presolve time = 0.00 sec. (2.93 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =           320.350639
+Iteration:   123    Scaled infeas =            37.762756
+Switched to steepest-edge.
+Iteration:   219    Objective     =             5.015873
+Iteration:   283    Objective     =             3.569676
+Iteration:   350    Objective     =             1.333557
+Iteration:   412    Objective     =             0.538725
+Iteration:   474    Objective     =             0.025887
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\eb1737d9bef746faa6eb9b195fb0d9dd-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:29:57 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\eb1737d9bef746faa6eb9b195fb0d9dd-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:31:05 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4341 rows and 2315 columns.
+Aggregator did 149 substitutions.
+Reduced LP has 162 rows, 176 columns, and 793 nonzeros.
+Presolve time = 0.00 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1013.496551
+Switched to devex.
+Iteration:    91    Scaled infeas =            43.786231
+Iteration:   157    Objective     =            16.789638
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\7f96c75b41104529a536e8cf49267682-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:31:09 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\7f96c75b41104529a536e8cf49267682-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:32:18 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4341 rows and 2315 columns.
+Aggregator did 149 substitutions.
+Reduced LP has 162 rows, 176 columns, and 793 nonzeros.
+Presolve time = 0.01 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1013.496551
+Switched to devex.
+Iteration:    91    Scaled infeas =            43.786231
+Iteration:   157    Objective     =            16.789638
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\5e056d9295194b9693d563cda2d02ad2-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:32:22 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\5e056d9295194b9693d563cda2d02ad2-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:39:13 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 8189 rows and 5701 columns.
+Aggregator did 127 substitutions.
+Reduced LP has 176 rows, 172 columns, and 645 nonzeros.
+Presolve time = 0.02 sec. (4.55 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1085.973987
+Switched to steepest-edge.
+Iteration:    85    Scaled infeas =            16.683330
+Iteration:   148    Scaled infeas =             1.319480
+Iteration:   167    Objective     =             8.526709
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\70507d95953849e7ada7e59042282e5c-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:41:41 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\70507d95953849e7ada7e59042282e5c-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:42:45 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4341 rows and 2315 columns.
+Aggregator did 149 substitutions.
+Reduced LP has 162 rows, 176 columns, and 793 nonzeros.
+Presolve time = 0.00 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1013.496551
+Switched to devex.
+Iteration:    91    Scaled infeas =            43.786231
+Iteration:   157    Objective     =            16.789638
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\16fbf247bb8b49d5ad4d1dcbd3283e7a-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:50:09 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\16fbf247bb8b49d5ad4d1dcbd3283e7a-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:51:16 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4341 rows and 2315 columns.
+Aggregator did 149 substitutions.
+Reduced LP has 162 rows, 176 columns, and 793 nonzeros.
+Presolve time = 0.00 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1013.496551
+Switched to devex.
+Iteration:    91    Scaled infeas =            43.786231
+Iteration:   157    Objective     =            16.789638
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\4061d68f19d4450c8a380e1feb185fe4-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:56:31 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\4061d68f19d4450c8a380e1feb185fe4-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:57:45 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4341 rows and 2315 columns.
+Aggregator did 149 substitutions.
+Reduced LP has 162 rows, 176 columns, and 793 nonzeros.
+Presolve time = 0.00 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1013.496551
+Switched to devex.
+Iteration:    91    Scaled infeas =            43.786231
+Iteration:   157    Objective     =            16.789638
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\36aaf8610bd5471d9a6f8bb0dedaf28d-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:58:25 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\36aaf8610bd5471d9a6f8bb0dedaf28d-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 11:59:30 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4341 rows and 2315 columns.
+Aggregator did 149 substitutions.
+Reduced LP has 162 rows, 176 columns, and 793 nonzeros.
+Presolve time = 0.02 sec. (2.48 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1013.496551
+Switched to devex.
+Iteration:    91    Scaled infeas =            43.786231
+Iteration:   157    Objective     =            16.789638
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\a85982748ec94501bbd3434b7ffdb22b-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:11:02 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\8f6e75c4dfe9420487033a19700099af-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:14:01 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\05aa45a4131343a2bf4bd83b82d9bb20-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:14:06 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\368cd896ce6a421cabfe32f3f69f0a86-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:14:47 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\368cd896ce6a421cabfe32f3f69f0a86-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:16:19 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4487 rows and 2442 columns.
+Aggregator did 144 substitutions.
+Reduced LP has 161 rows, 174 columns, and 783 nonzeros.
+Presolve time = 0.00 sec. (2.55 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1209.069908
+Switched to devex.
+Iteration:    83    Scaled infeas =            14.257437
+Iteration:   141    Objective     =            12.128367
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\5d20e44eb5754676ba25c4d7ae5ceae5-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:16:28 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\5d20e44eb5754676ba25c4d7ae5ceae5-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:19:49 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 8332 rows and 5814 columns.
+Aggregator did 123 substitutions.
+Reduced LP has 177 rows, 183 columns, and 662 nonzeros.
+Presolve time = 0.00 sec. (4.64 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =         10746.337966
+Switched to steepest-edge.
+Iteration:    99    Scaled infeas =            39.350912
+Iteration:   164    Scaled infeas =             1.616235
+Iteration:   180    Objective     =            13.136339
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\39491702d2564691b11247ecf167a91b-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:19:54 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 8357 rows and 5788 columns.
+Aggregator did 128 substitutions.
+Reduced LP has 155 rows, 212 columns, and 949 nonzeros.
+Presolve time = 0.00 sec. (4.77 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          8400.372145
+Iteration:    89    Scaled infeas =            14.876335
+Switched to devex.
+Iteration:   165    Scaled infeas =             0.019110
+Iteration:   168    Objective     =             3.285940
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\d6031e38ad384f08a7da774bde629225-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:27:54 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\ec00599a09e84cdbb0bb14cd927bd943-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:27:58 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\8a6fd82bbcb1482aae8430f1825da5a4-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:28:31 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\8a6fd82bbcb1482aae8430f1825da5a4-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:30:04 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4487 rows and 2442 columns.
+Aggregator did 144 substitutions.
+Reduced LP has 161 rows, 174 columns, and 783 nonzeros.
+Presolve time = 0.02 sec. (2.55 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1209.069908
+Switched to devex.
+Iteration:    83    Scaled infeas =            14.257437
+Iteration:   141    Objective     =            12.128367
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\12adeee59c424a43814862b772e147de-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:30:38 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\2c3042bb8c804fa195961cb692b775d8-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:34:01 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\3277d1545580408c9731995334c361b8-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:34:06 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\85b95c0905bb4b448a2bca64bc9782db-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:34:42 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\85b95c0905bb4b448a2bca64bc9782db-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:35:41 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4505 rows and 2453 columns.
+Aggregator did 157 substitutions.
+Reduced LP has 130 rows, 150 columns, and 679 nonzeros.
+Presolve time = 0.00 sec. (2.50 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =           414.273250
+Iteration:    77    Scaled infeas =             5.239848
+Switched to devex.
+Iteration:    95    Objective     =            10.802305
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\5d057ca43ace433783c07d39d6650682-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 12:35:48 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\5d057ca43ace433783c07d39d6650682-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 13:29:20 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 8364 rows and 5857 columns.
+Aggregator did 164 substitutions.
+Reduced LP has 104 rows, 99 columns, and 378 nonzeros.
+Presolve time = 0.01 sec. (4.56 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =          1135.306339
+Switched to steepest-edge.
+Iteration:    68    Scaled infeas =             1.432230
+Iteration:    73    Objective     =             3.372226
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\f575092d0bc346359cee571b804ef35b-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 13:29:25 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\f575092d0bc346359cee571b804ef35b-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 13:29:26 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 8412 rows and 5900 columns.
+Aggregator did 222 substitutions.
+Reduced LP has 6 rows, 6 columns, and 12 nonzeros.
+Presolve time = 0.02 sec. (4.40 ticks)
+
+Iteration log . . .
+Iteration:     1    Infeasibility =             2.000000
+Switched to devex.
+Iteration:     4    Objective     =             2.160444
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\1bf0745633b042f2a6bbde12bc88d282-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 13:30:21 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\1bf0745633b042f2a6bbde12bc88d282-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 13:30:34 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 5836 rows and 1858 columns.
+Aggregator did 123 substitutions.
+Reduced LP has 361 rows, 356 columns, and 1061 nonzeros.
+Presolve time = 0.00 sec. (2.93 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =           320.350639
+Iteration:   123    Scaled infeas =            37.762756
+Switched to steepest-edge.
+Iteration:   219    Objective     =             5.015873
+Iteration:   283    Objective     =             3.569676
+Iteration:   350    Objective     =             1.333557
+Iteration:   412    Objective     =             0.538725
+Iteration:   474    Objective     =             0.025887
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\509593312c734abcadba7b3858bc94bd-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 20:00:20 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\1383dc81cffb40438187100947341463-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 20:00:30 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\1383dc81cffb40438187100947341463-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 20:11:14 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3530 rows and 2382 columns.
+Aggregator did 88 substitutions.
+Reduced LP has 237 rows, 176 columns, and 703 nonzeros.
+Presolve time = 0.00 sec. (2.47 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =         43384.246347
+Switched to steepest-edge.
+Iteration:    90    Scaled infeas =           499.113837
+Iteration:   156    Scaled infeas =            62.368643
+Iteration:   183    Objective     =           135.044138
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\757901c4bfd6487f8189be86d70147bb-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 20:11:18 2021
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\757901c4bfd6487f8189be86d70147bb-pulp.lp' Clone_2 (V12.10.0.0) Fri Mar 12 20:12:08 2021
+
+Tried aggregator 1 time.
+LP Presolve eliminated 3432 rows and 2356 columns.
+Aggregator did 133 substitutions.
+Reduced LP has 290 rows, 157 columns, and 760 nonzeros.
+Presolve time = 0.01 sec. (2.44 ticks)
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =         22473.955622
+Switched to steepest-edge.
+Iteration:    95    Scaled infeas =           279.717846
+Iteration:   158    Scaled infeas =             8.565591
+Iteration:   180    Objective     =            57.272955
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\craig\AppData\Local\Temp\266f791a8e284ede8a8c20d70e616421-pulp.lp' Clone_2 (V12.10.0.0) Sun Mar 14 21:34:04 2021
+

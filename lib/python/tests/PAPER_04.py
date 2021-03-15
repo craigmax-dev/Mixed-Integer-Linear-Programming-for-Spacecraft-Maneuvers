@@ -50,7 +50,8 @@ W = 10       # Plume Width (m)
 M = 1000000 # Big M Method
 m = np.array([50, 50, 50])  # Mass of satellites (kg)
 minApproachDist = 1   # Min displacement between satellie and any obstacle in each dimension (m)
-omega = 5400 # (s)
+omega = 0 # (s)
+dynamicsModel = "hills" # Define dynamics model - "hills" or "freeSpace"
 
 # Initial state vector
 x_ini = np.array([[-2, 12, 0, 0, 0, 0]]) # x_i = 0, v_i = 0

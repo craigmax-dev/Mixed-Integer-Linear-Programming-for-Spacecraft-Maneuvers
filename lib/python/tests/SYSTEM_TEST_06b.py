@@ -16,8 +16,8 @@ title = "Integration Test 6: Plume Avoidance for Vehicles"
 activeConstraints = { 
   "basic":True, 
   "obstacleAvoidance":True, 
-  "collisionAvoidance":False, 
-  "plumeAvoidanceVehicle":True,
+  "collisionAvoidance":True, 
+  "plumeAvoidanceVehicle":False,
   "plumeAvoidanceObstacle":False,
   "finalConfigurationSelection":False}
 # Define dynamics model
@@ -42,8 +42,8 @@ N = 3       # Number of dimensions
 T = 20     # Number of time steps
 T_end = 100 # End time (s)
 V = 2       # Number of vehicles
-P = 6       # Plume Length (m)
-W = 1       # Plume Width (m)
+P = 10       # Plume Length (m)
+W = 2       # Plume Width (m)
 M = 1000    # Big M Method
 m = np.array([1, 1])  # Mass of satellites (kg)
 minApproachDist = 1   # Min displacement between satellie and any obstacle in each dimension (m)
