@@ -48,15 +48,16 @@ from lib.python.MILP_spacecraft_maneuvers import *
 #   "SYSTEM_TEST_06e"]
 
 # Uncomment to run all paper Problem Files
-# testCases = [
-#   "PAPER_TEST_01a",
-#   "PAPER_TEST_01b",
-#   "PAPER_TEST_01c",
-#   "PAPER_03a",
-#   "PAPER_03b",
-#   "PAPER_04"]
 testCases = [
-  "SYSTEM_TEST_06a"]
+  "PAPER_TEST_01a",
+  "PAPER_TEST_01b",
+  "PAPER_TEST_01c",
+  "PAPER_03a",
+  "PAPER_03b",
+  "PAPER_04"]
+testCases = [
+  "PAPER_03a",
+  "PAPER_03b"]
 # Run models
 for test in testCases:
   print("Test case: {}".format(test))
