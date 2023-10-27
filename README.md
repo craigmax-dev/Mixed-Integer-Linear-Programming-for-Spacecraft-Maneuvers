@@ -5,4 +5,4 @@ This project implements a model for Mixed Integer Linear Programming for Spacecr
 
 This project requires the [IBM CPLEX optimizer](https://www.ibm.com/analytics/cplex-optimizer).
 
-This project is currently in an early stage. Further improvements and information will be implemented shortly.
+Further improvements and information to be implemented shortly.
