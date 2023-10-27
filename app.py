@@ -4,9 +4,7 @@
 # TO DO:
 # generate legends
 # latex formatting of plots
-# Implement fuel use? - currently optimizing for minimum total thrust (just a simple multiplication?)
 # Add labels for x, y, z axis
-# Calculate number of optimisation variables for each problem?
 
 # Import function library
 from lib.python.MILP_spacecraft_maneuvers import *
